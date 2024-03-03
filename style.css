@@ -31,10 +31,38 @@ label{
 }
 
 #calcular{
+
     display: block;
     margin: auto;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 15px;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
-   background-color: rgb(101, 255, 101);
+   background-color: rgb(39, 99, 84);
+   color: white;
 }
+
+#opcoes{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+}
+
+#opcoes>div{
+    background-color: rgb(3, 107, 67);
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+}
+
+#calcular:hover{
+    background-color: rgb(52, 212, 60);
+    cursor: pointer;
+    padding: 5px;
+    transition: 1s;
+}
+
+
+
+
