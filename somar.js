@@ -17,10 +17,10 @@ function calculacontas(){
        
         
     });
- 
 
     var resultado = document.querySelector("#total")
     resultado.textContent = total
-    
 }
+
+
 
