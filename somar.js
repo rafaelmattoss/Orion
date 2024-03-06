@@ -11,13 +11,13 @@ function calculacontas() {
 
     contasfixas.forEach(function(input) {
         if (input.value.trim() !== "") {
-            total += parseFloat(input.value);
+            total += parseFloat(input.value).toFixed(2);
         }
     });
 
     contasVariaveis.forEach(function(input) {
         if (input.value.trim() !== "") {
-            total += parseFloat(input.value);
+            total += parseFloat(input.value).toFixed(2);;
         }
     });
 
