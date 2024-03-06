@@ -6,6 +6,7 @@ botao.addEventListener("click", calculacontas);
 
 function calculacontas() {
     var contasfixas = document.querySelectorAll(".contasf");
+    var contasVariaveis= document.querySelectorAll(".contasv")
     var total = 0;
 
     contasfixas.forEach(function(input) {
@@ -14,8 +15,14 @@ function calculacontas() {
         }
     });
 
+    contasVariaveis.forEach(function(input) {
+        if (input.value.trim() !== "") {
+            total += parseFloat(input.value);
+        }
+    });
+
     var resultado = document.querySelector("#total");
-    resultado.textContent = total;
+    resultado.textContent = total + 'R$';
 }
 
 $("#pessoa").click(function() {

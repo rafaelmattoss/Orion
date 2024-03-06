@@ -17,6 +17,13 @@ h1{
     margin: 5px;
 }
 
+.contasv{
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+
 main>div{
     margin-bottom: 15px;
     margin-left: 10px ;
@@ -84,6 +91,22 @@ label{
     background-color: rgb(65, 114, 250);
     padding: 10px;
     transition: 0.5s;
+}
+
+#todasfixas{
+    display: none;
+}
+
+#todasvariaveis{
+    display: none;
+}
+
+#todasfixas>div{
+    margin-bottom: 30px;
+}
+
+#todasvariaveis>div{
+    margin-bottom: 30px;
 }
 
 
