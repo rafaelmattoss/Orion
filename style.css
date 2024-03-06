@@ -86,5 +86,14 @@ label{
     align-items: center;
 }
 
+#opcoes div:hover{
+    background-color: rgb(65, 114, 250);
+    padding: 10px;
+    transition: 0.5s;
+}
+
+
+
+
 
 
