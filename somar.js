@@ -11,42 +11,37 @@ function calculacontas() {
 
     contasfixas.forEach(function(input) {
         if (input.value.trim() !== "") {
-            total += parseFloat(input.value).toFixed(2);
+            total += parseFloat(input.value);
         }
     });
 
     contasVariaveis.forEach(function(input) {
         if (input.value.trim() !== "") {
-            total += parseFloat(input.value).toFixed(2);;
+            total += parseFloat(input.value);
         }
     });
 
     var resultado = document.querySelector("#total");
-    resultado.textContent = total + 'R$';
+    resultado.textContent = total.toFixed(2) + 'R$';
 }
 
-$("#pessoa").click(function() {
-    var total = parseFloat($('#total').text());
-    var novoTotal = total / 1;
-    $('#total').text(novoTotal);
-});
 
 $("#pessoas").click(function() {
     var total = parseFloat($('#total').text());
     var novoTotal = total / 2;
-    $('#total').text(novoTotal);
+    $('#total').text(novoTotal.toFixed(2));
 });
 
 $("#pessoas1").click(function() {
     var total = parseFloat($('#total').text());
     var novoTotal = total / 3;
-    $('#total').text(novoTotal);
+    $('#total').text(novoTotal.toFixed(2));
 });
 
 $("#pessoas2").click(function() {
     var total = parseFloat($('#total').text());
-    var novoTotal = total / 2;
-    $('#total').text(novoTotal);
+    var novoTotal = total / 4;
+    $('#total').text(novoTotal.toFixed(2));
 });
 
 
