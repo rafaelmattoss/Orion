@@ -40,14 +40,27 @@ label{
 }
 
 #calcular{
-
-    display: block;
-    margin: auto;
-    padding: 10px;
-    border-radius: 15px;
+   margin: auto;
+   width: 90PX;
+   padding: 10px;
+   border-radius: 15px;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    background-color: rgb(39, 99, 84);
    color: white;
+   border: 1px solid rgb(243, 241, 241); 
+   margin-bottom: 40px; 
+}
+
+#total{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(25, 255, 83);
+    width: max-content;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    display: none;
 }
 
 #opcoes{
@@ -55,7 +68,7 @@ label{
     gap: 60px;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 40px;
+    margin-bottom: 40px;    
 }
 
 #opcoes>div{
@@ -63,8 +76,10 @@ label{
     padding: 5px;
     color: white;
     border-radius: 10px;
-    height: auto;
+    height: auto;  
 }
+
+
 
 #calcular:hover{
     background-color: rgb(52, 212, 60);
@@ -81,11 +96,24 @@ label{
 }
 
 
-#opcoes{
+
+#opcoesmenu{
     display: flex;
     gap: 50px;
     align-items: center;
+    justify-content: center;  
+    margin-bottom: 40px;
 }
+
+#opcoesmenu>div{
+    background-color: rgb(0, 102, 109);
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 #opcoes div:hover{
     background-color: rgb(65, 114, 250);
