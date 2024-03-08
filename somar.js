@@ -26,10 +26,8 @@ function calculacontas() {
     resultado.textContent = total.toFixed(2) + 'R$' ;
 }
 
-var resultadosDivisao = []; 
 
 $("#calcular").click(function() {
-    
     resultadosDivisao = [];
    
     var totalOriginal = parseFloat($('#total').text());
@@ -37,11 +35,10 @@ $("#calcular").click(function() {
     resultadosDivisao.push(totalOriginal / 2);
     resultadosDivisao.push(totalOriginal / 3);
     resultadosDivisao.push(totalOriginal / 4);
+
+    
 });
 
-function calcularsalariofinal (){
- 
-}
 
 $("#pessoas").click(function() {
    
