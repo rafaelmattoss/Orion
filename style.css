@@ -4,11 +4,29 @@ body{
     background-color: aquamarine;
 }
 
+#salariot{
+    float: right;
+    clear: both;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+}
+
+#salario{
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 2px;
+}
+
+#salariot > label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 h1{
+    margin-top: 70px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin-bottom: 50px;
+    
 }
 
 .contasf{
@@ -49,6 +67,7 @@ label{
    color: white;
    border: 1px solid rgb(243, 241, 241); 
    margin-bottom: 40px; 
+   display: none;
 }
 
 #total{
