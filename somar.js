@@ -27,23 +27,34 @@ function calculacontas() {
 }
 
 
+var resultadosDivisao = []; 
+
+$("#calcular").click(function() {
+    
+    resultadosDivisao = [];
+
+    var totalOriginal = parseFloat($('#total').text());
+
+    resultadosDivisao.push(totalOriginal / 2);
+    resultadosDivisao.push(totalOriginal / 3);
+    resultadosDivisao.push(totalOriginal / 4);
+});
+
 $("#pessoas").click(function() {
-    var total = parseFloat($('#total').text());
-    var novoTotal = total / 2;
-    $('#total').text(novoTotal.toFixed(2)) + 'R$';
+    $('#total').text(resultadosDivisao[0].toFixed(2) + 'R$');
 });
 
 $("#pessoas1").click(function() {
-    var total = parseFloat($('#total').text());
-    var novoTotal = total / 3;
-    $('#total').text(novoTotal.toFixed(2) + 'R$' );
+   
+    $('#total').text(resultadosDivisao[1].toFixed(2) + 'R$');
 });
 
 $("#pessoas2").click(function() {
-    var total = parseFloat($('#total').text());
-    var novoTotal = total / 4;
-    $('#total').text(novoTotal.toFixed(2)) + 'R$';
+    $('#total').text(resultadosDivisao[2].toFixed(2) + 'R$');
 });
+
+
+
 
 
 
