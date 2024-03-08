@@ -26,32 +26,39 @@ function calculacontas() {
     resultado.textContent = total.toFixed(2) + 'R$' ;
 }
 
-
 var resultadosDivisao = []; 
 
 $("#calcular").click(function() {
     
     resultadosDivisao = [];
-
+   
     var totalOriginal = parseFloat($('#total').text());
-
+    
     resultadosDivisao.push(totalOriginal / 2);
     resultadosDivisao.push(totalOriginal / 3);
     resultadosDivisao.push(totalOriginal / 4);
 });
 
+function calcularsalariofinal (){
+ 
+}
+
 $("#pessoas").click(function() {
+   
     $('#total').text(resultadosDivisao[0].toFixed(2) + 'R$');
 });
 
 $("#pessoas1").click(function() {
-   
+    
     $('#total').text(resultadosDivisao[1].toFixed(2) + 'R$');
 });
 
 $("#pessoas2").click(function() {
+    
     $('#total').text(resultadosDivisao[2].toFixed(2) + 'R$');
 });
+
+
 
 
 
