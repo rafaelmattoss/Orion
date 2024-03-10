@@ -1,13 +1,11 @@
 
+var resultadosDivisao = [];
 
 
-var botao = document.querySelector("#calcular");
-botao.addEventListener("click", calculacontas);
-
-
-function calculacontas() {
+$("#calcular").click(function() {
+    var salario = $( "#salario" ).val(); 
     var contasfixas = document.querySelectorAll(".contasf");
-    var contasVariaveis= document.querySelectorAll(".contasv")
+    var contasVariaveis = document.querySelectorAll(".contasv");
     var total = 0;
 
     contasfixas.forEach(function(input) {
@@ -22,45 +20,33 @@ function calculacontas() {
         }
     });
 
-    var resultado = document.querySelector("#total");
-    resultado.textContent = total.toFixed(2) + 'R$' ;
-}
-
-
-$("#calcular").click(function() {
-    resultadosDivisao = [];
-   
-    var totalOriginal = parseFloat($('#total').text());
     
+    $('#total').text(total.toFixed(2) + "R$");
+
+    divisao(total);
+
+    $("#salario").val( salario - total);
+
+});
+
+
+function divisao(totalOriginal) {
+    resultadosDivisao = [];
+
     resultadosDivisao.push(totalOriginal / 2);
     resultadosDivisao.push(totalOriginal / 3);
     resultadosDivisao.push(totalOriginal / 4);
-
-    
-});
+}
 
 
 $("#pessoas").click(function() {
-   
-    $('#total').text(resultadosDivisao[0].toFixed(2) + 'R$');
+    $('#total').text(resultadosDivisao[0].toFixed(2) + 'R$'); 
 });
 
 $("#pessoas1").click(function() {
-    
     $('#total').text(resultadosDivisao[1].toFixed(2) + 'R$');
 });
 
 $("#pessoas2").click(function() {
-    
     $('#total').text(resultadosDivisao[2].toFixed(2) + 'R$');
 });
-
-
-
-
-
-
-
-
-
-

@@ -1,18 +1,16 @@
-$("#menuf").click(()=>{
+
+$("#menuf").click(() => {
     $("#todasfixas").toggle();
-    $("#calcular").toggle();
-})
+});
 
-$("#menuv").click(()=>{
-    $("#todasvariaveis").toggle();
-    $("#calcular").toggle();
-    
-})
+$("#menuv").click(() => {
+    $(" #todasvariaveis").toggle();
+});
 
-$("#calcular").click(()=>{
-    $("#total").toggle();
-    
-})
+$("#menuf, #menuv").click(() => {
+    $("#calcular").toggle();
+});
+
 
 
 
