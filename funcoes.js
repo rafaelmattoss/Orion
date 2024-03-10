@@ -4,7 +4,6 @@ let menuVToggle = false
 
 $("#menuf").click(() => {
     $("#todasfixas").toggle();
-    $("#calcular").toggle();
     menuFToggle = !menuFToggle;
     if (menuFToggle) {
         $("#menuf").text("X");
@@ -15,7 +14,6 @@ $("#menuf").click(() => {
 
 $("#menuv").click(() => {
     $("#todasvariaveis").toggle();
-    $("#calcular").toggle();
 
     menuVToggle = !menuVToggle;
     if (menuVToggle) {
@@ -26,6 +24,7 @@ $("#menuv").click(() => {
 });
 
 $("#menuf, #menuv").click(() => {
+
     $("#calcular").toggle();
 });
 
