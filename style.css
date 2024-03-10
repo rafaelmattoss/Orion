@@ -83,7 +83,7 @@ label{
 
 #opcoes{
     display: flex;
-    gap: 60px;
+    gap: 30px;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 40px;    
@@ -133,7 +133,7 @@ label{
 }
 
 #opcoesmenu div:hover{
-    background-color: rgb(20, 80, 245);
+    background-color: rgb(245, 28, 20);
     padding: 7px;
     transition: 0.5s;
 }
