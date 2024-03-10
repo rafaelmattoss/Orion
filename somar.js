@@ -25,7 +25,9 @@ $("#calcular").click(function() {
 
     divisao(total);
 
-    $("#salario").val( salario - total);
+    var totalreal = (salario - total)
+
+    $("#salario").val(totalreal);
 
 });
 
