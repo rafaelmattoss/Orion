@@ -155,19 +155,22 @@ label{
     display: none;
     background-color: white;
     padding: 30px;
-    border-radius: 20px;
+    border-radius: 10px;
+    margin-left: 0%;
 }
 
 #todasvariaveis{
     display: none;
     background-color: white;
     padding: 30px;
-    border-radius: 20px;
+    border-radius: 10px;
+    margin-left: 0%;
 }
 
 #todasfixas>div{
     margin-bottom: 30px;
     background-color: white;
+    
 }
 
 #todasvariaveis>div{
