@@ -136,13 +136,10 @@ label{
     border-radius: 10px;
     height: auto;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 
-#opcoesmenu div:hover{
-    background-color: rgb(245, 28, 20);
-    padding: 7px;
-    transition: 0.5s;
-}
+
 
 
 #opcoes div:hover{
@@ -202,6 +199,23 @@ label{
     margin-bottom: 30px;
   }
   @keyframes s6 {to{transform: rotate(1turn)}}
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  #total.pulsate {
+    animation: pulse 1s infinite alternate;
+  }
+  
 
 
 
