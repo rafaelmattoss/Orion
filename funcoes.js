@@ -39,3 +39,7 @@ $("#menuv").click(() => {
 $("#adcontasf").click(()=>{
     $("#descricaof").toggle();
 })
+
+$("#adcontasv").click(()=>{
+    $("#descricaov").toggle();
+})

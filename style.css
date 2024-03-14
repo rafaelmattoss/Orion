@@ -58,9 +58,6 @@ font-weight: 300;
 margin-left: 20px;
 }
 
-label{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 #calcular{
    margin: auto;
@@ -164,10 +161,22 @@ label{
     margin-left: 0%;
 }
 
-#todasfixas>div{
+.df{
+    margin-bottom: 30px;
+    background-color: white;   
+}
+
+.dv{
     margin-bottom: 30px;
     background-color: white;
-    
+}
+
+.lv{
+    display: block;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+  
 }
 
 #todasvariaveis>div{
@@ -200,6 +209,21 @@ label{
 
 }
 
+#adcontasv{
+    background-color: chartreuse;
+    border-radius: 50%;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    clear: both;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
 #descricaof{   
     background-color: white;
     padding: 20px;
@@ -208,17 +232,40 @@ label{
     margin-bottom: 50px;  
 }
 
-#descricaof>h1{
+#descricaov{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    display: none;
+    margin-bottom: 50px;  
+}
+
+#descricaof>h1, #descricaov>h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
-#descricaof>label, #descricaof>input{
+#descricaof>input, #descricaof>label{
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#descricaov>input, #descricaov>label{
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+.lf{
+    display: block;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 10px;
 }
 
