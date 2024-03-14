@@ -180,10 +180,56 @@ label{
     transition: 0.5s;
 }
 
-#total.ocultar{
+#total.ocultar, #descricaof.ocultar{
     display: none ;
 }
 
+#adcontasf{
+    background-color: chartreuse;
+    border-radius: 50%;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    clear: both;
+    margin-bottom: 20px;
+    font-size: 20px;
+
+}
+
+#descricaof{   
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    display: none;
+    margin-bottom: 50px;  
+}
+
+#descricaof>h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#descricaof>label, #descricaof>input{
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#addfixa{
+    background-color: rgb(166, 255, 77);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    border-radius: 30px;
+    margin: auto;
+    display: block;
+}
 
 
 .custom-loader {
@@ -198,6 +244,11 @@ label{
     margin: auto;
     margin-bottom: 30px;
   }
+
+
+
+
+
   @keyframes s6 {to{transform: rotate(1turn)}}
 
   @keyframes pulse {

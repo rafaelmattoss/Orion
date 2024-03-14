@@ -14,7 +14,7 @@ $("#menuf").click(() => {
         $("#menuf").removeClass("fechar");
         $("#total").addClass('ocultar'); 
         $("#calcular").hide(); 
-        $("#total").ClassAdd('ocultar');
+        
     }
 });
 
@@ -31,6 +31,11 @@ $("#menuv").click(() => {
         $("#menuv").removeClass("fechar");
         $("#total").addClass('ocultar');
         $("#calcular").hide(); 
+        $("#descricaof").ClassAdd('ocultar');
         
     }
 });
+
+$("#adcontasf").click(()=>{
+    $("#descricaof").toggle();
+})

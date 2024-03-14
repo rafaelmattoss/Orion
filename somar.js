@@ -67,3 +67,5 @@ $("#pessoas2").click(function() {
     $('#total').text(valorDivisao.toFixed(2) + 'R$');
     $("#salario").val(novoSalario.toFixed(2)); 
 });
+
+
