@@ -26,7 +26,6 @@ $(document).ready(()=>{
    })
 
    $("#addvariavel").click(()=>{
-
     
     var despesav = $("#descricaovv").val();
     var valorv = $("#valorv").val();
@@ -44,8 +43,9 @@ $(document).ready(()=>{
 
     $("#todasvariaveis").append(novaDespesav)
 
-    $("despesav").val("");
-    $  ("#valorv").val("");
+    $("#descricaovv").val("");
+    $("#valorv").val("");
+
     } else{
         alert(" os dois campos precisam ser preenchidos")
     }

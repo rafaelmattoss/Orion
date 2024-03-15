@@ -4,6 +4,8 @@ let menuVToggle = false;
 $("#menuf").click(() => {
     $("#todasfixas").toggle();
     menuFToggle = !menuFToggle;
+    $("#df").toggle();
+
     if (menuFToggle) {
         $("#menuf").text("X");
         $("#menuf").addClass("fechar"); 
@@ -14,9 +16,12 @@ $("#menuf").click(() => {
         $("#menuf").removeClass("fechar");
         $("#total").addClass('ocultar'); 
         $("#calcular").hide(); 
+        $("#descricaof").hide();
+        $("#descricaov").hide();
         
     }
 });
+
 
 $("#menuv").click(() => {
     $("#todasvariaveis").toggle();
@@ -31,14 +36,18 @@ $("#menuv").click(() => {
         $("#menuv").removeClass("fechar");
         $("#total").addClass('ocultar');
         $("#calcular").hide(); 
-        $("#descricaof").ClassAdd('ocultar');
-        
+        $("#descricaof").hide();
+        $("#descricaov").hide();
+
     }
 });
+
+
 
 $("#adcontasf").click(()=>{
     $("#descricaof").toggle();
 })
+
 
 $("#adcontasv").click(()=>{
     $("#descricaov").toggle();
