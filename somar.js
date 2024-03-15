@@ -25,11 +25,15 @@ $("#calcular").click(function() {
     divisao(total);
 });
 
+let salarioatualizado = false
 $("#total").click(() => {
+    if(!salarioatualizado){
     var salario = parseFloat($("#salario").val());
     var totalAtual = parseFloat($('#total').text());
     var novoSalario = salario - totalAtual;
     $("#salario").val(novoSalario.toFixed(2));
+
+    salarioatualizado = true
 
     $("#total").addClass("pulsate");
     
@@ -37,6 +41,7 @@ $("#total").click(() => {
     setTimeout(() => {
         $("#total").removeClass("pulsate");
     }, 1000);
+}
 });
 
 

@@ -136,6 +136,15 @@ margin-left: 20px;
     cursor: pointer;
 }
 
+#addfixa:hover{
+    transition: 0.5s;
+    transform: scale(1.2) 
+}
+
+#addvariavel:hover{
+    transition: 0.5s;
+    transform: scale(1.2) 
+}
 
 
 
@@ -206,8 +215,11 @@ margin-left: 20px;
     clear: both;
     margin-bottom: 20px;
     font-size: 20px;
+    border: 1px solid black;
 
 }
+
+
 
 #adcontasv{
     background-color: chartreuse;
@@ -311,7 +323,11 @@ margin-left: 20px;
   }
   
   #total.pulsate {
+    background-color: rgb(2, 196, 2);
+    padding: 5px;
     animation: pulse 1s infinite alternate;
+    transition: 0.5;
+
   }
   
 
