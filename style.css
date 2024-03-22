@@ -331,15 +331,16 @@ margin-left: 20px;
   }
 
   .df.deletar{
-    background-color: rgba(255, 0, 0, 0.795);
+    background-color: rgba(255, 0, 0, 0.678);
     transition: 0.5s;
-    border-radius: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     padding: 2px;
     color: white;
 
   }
 
-  
+
   
 
 

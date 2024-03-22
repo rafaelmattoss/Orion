@@ -65,7 +65,7 @@ $("#adcontasv").click(()=>{
     $("#descricaov").toggle();
 });
 
-$(".df").on("mousedown touchstart", function(event) {
+$(document).on("mousedown touchstart", ".df", function(event) {
     let startX = event.pageX || event.originalEvent.touches[0].pageX;
     let $element = $(this);
     
@@ -85,6 +85,7 @@ $(".df").on("mousedown touchstart", function(event) {
         }
     });
 });
+
 
 
 
