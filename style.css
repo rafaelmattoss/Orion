@@ -329,6 +329,15 @@ margin-left: 20px;
     transition: 0.5;
 
   }
+
+  .df.deletar{
+    background-color: rgba(255, 0, 0, 0.795);
+    transition: 0.5s;
+    border-radius: 30px;
+    padding: 2px;
+    color: white;
+
+  }
   
 
 

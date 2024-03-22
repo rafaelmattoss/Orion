@@ -64,3 +64,19 @@ $("#adcontasf").click(()=>{
 $("#adcontasv").click(()=>{
     $("#descricaov").toggle();
 });
+
+$(".df").on("mousedown", function() {
+    let $element = $(this);
+    pressTimer = window.setTimeout(() => {
+        $element.addClass("deletar");
+        setTimeout(() => {
+            $element.remove();
+        }, 1000); // Remover após 1 segundo que a animação começou
+    }, 500);
+}).on("mouseup", function() {
+    clearTimeout(pressTimer);
+});
+
+
+
+
