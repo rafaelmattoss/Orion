@@ -97,6 +97,7 @@ margin-left: 20px;
     color: rgb(0, 0, 0);
     border-radius: 10px;
     height: auto;  
+    border: 1px solid black;
 }
 
 
@@ -338,6 +339,23 @@ margin-left: 20px;
     padding: 2px;
     color: white;
 
+  }
+
+  .pergunta{
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  #box{
+    display: none;
+    margin: auto;
+    padding: 5px;
+    background-color: white;
+    width: 400px;
+    border-radius: 20px;
   }
 
 

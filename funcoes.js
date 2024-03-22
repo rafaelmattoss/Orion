@@ -10,11 +10,13 @@ $("#menuf").click(() => {
     if (menuFToggle || (menuVToggle && !menuFToggle)) {
         $("#calcular").show(); 
         $("#total").removeClass('ocultar');
+        $("#box").show();
     } else {
         $("#total").addClass('ocultar');
         $("#calcular").hide(); 
         $("#descricaof").hide();
         $("#descricaov").hide();
+        $("#box").hide();
     }
 
     if (menuFToggle) {
@@ -37,19 +39,24 @@ $("#menuv").click(() => {
     if (menuVToggle || (menuFToggle && !menuVToggle)) {
         $("#calcular").show(); 
         $("#total").removeClass('ocultar');
+        
     } else {
         $("#total").addClass('ocultar');
         $("#calcular").hide(); 
         $("#descricaof").hide();
         $("#descricaov").hide();
+        $("#box").hide();
+        
     }
 
     if (menuVToggle) {
         $("#menuv").text("X");
         $("#menuv").addClass("fechar");
+       
     } else{
         $("#menuv").text("Despesas Variáveis");
         $("#menuv").removeClass("fechar");
+        
     }
 });
     
