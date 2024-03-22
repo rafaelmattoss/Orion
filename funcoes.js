@@ -65,17 +65,27 @@ $("#adcontasv").click(()=>{
     $("#descricaov").toggle();
 });
 
-$(".df").on("mousedown", function() {
+$(".df").on("mousedown touchstart", function(event) {
+    let startX = event.pageX || event.originalEvent.touches[0].pageX;
     let $element = $(this);
-    pressTimer = window.setTimeout(() => {
-        $element.addClass("deletar");
-        setTimeout(() => {
+    
+    $(document).on("mousemove touchmove", function(event) {
+        let moveX = event.pageX || event.originalEvent.touches[0].pageX;
+        let distance = moveX - startX;
+
+        if (distance < -50) { // Se movido para a esquerda por mais de 50 pixels
+            $element.addClass("deletar");
+        } else {
+            $element.removeClass("deletar");
+        }
+    }).on("mouseup touchend", function() {
+        $(document).off("mousemove touchmove mouseup touchend");
+        if ($element.hasClass("deletar")) {
             $element.remove();
-        }, 1000); // Remover após 1 segundo que a animação começou
-    }, 500);
-}).on("mouseup", function() {
-    clearTimeout(pressTimer);
+        }
+    });
 });
+
 
 
 
